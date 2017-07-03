@@ -1,0 +1,383 @@
+.header{
+  height: 110px;
+  background: url(//misc.360buyimg.com/user/reg/1.0.0/css/i/headbg.jpg) repeat-x left bottom;
+  .logo{
+    width: 160px;
+    height: 50px;
+    float: left;
+    margin-top: 24px;
+    background: url(//misc.360buyimg.com/user/reg/1.0.0/css/i/icon.png) no-repeat;
+  }
+  .logo-title{
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    font-size: 24px;
+    color: #333;
+    padding-left: 30px;
+    margin-top: 34px;
+  }
+  .have-account{
+    font-size: 16px;
+    float: right;
+    margin-top: 55px;
+    color: #999;
+    a{
+      color: #333;
+    }
+  }
+}
+.main{
+  margin: 50px auto 60px;
+  width: 830px;
+  font-size: 14px;
+}
+.reg-form{
+  width: 400px;
+}
+.form-item{
+  position: relative;
+  border: solid 1px #ddd;
+  width: 400px;
+  height: 54px;
+  z-index: 0;
+  label{
+    float: left;
+    width: 90px;
+    height: 52px;
+    line-height: 52px;
+    padding-left: 20px;
+  }
+  .field{
+    border: 0 none;
+    font-size: 14px;
+    width: 210px;
+    height: 46px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    padding-top: 16px;
+  }
+  .i-status{
+    position: absolute;
+    display: none;
+    width: 16px;
+    height: 16px;
+    top: 20px;
+    right: 20px;
+  }
+  .form-authcode,.phonecode{
+    width: 150px;
+  }
+  .img-code{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 110px;
+    height: 46px;
+    cursor: pointer;
+  }
+}
+.form-item-account{
+  z-index: 13;
+}
+.form-item-err{
+  border: solid 1px #e22;
+}
+.form-item-valid{
+  i.i-status{
+    display: block;
+    background: url(//misc.360buyimg.com/user/reg/1.0.0/css/i/icon.png) no-repeat;
+    background-position: 0 -117px;
+  }
+}
+.pending{
+  i.i-status{
+    background: url(//misc.360buyimg.com/user/reg/1.0.0/css/i/loading.gif);
+    display: block;
+  }
+}
+.input-tip{
+  color: #c5c5c5;
+  height: 32px;
+  font-size: 12px;
+  padding-top: 5px;
+  i{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: text-top;
+    margin-right: 8px;
+  }
+  .error{
+    color: #e22;
+  }
+}
+.i-error{
+  background: url(//misc.360buyimg.com/user/reg/1.0.0/css/i/icon.png) no-repeat;
+  background-position: -17px -100px;
+}
+.i-def{
+  background: url(//misc.360buyimg.com/user/reg/1.0.0/css/i/icon.png) no-repeat;
+  background-position: 0 -100px;
+
+}
+.tips{
+  position: absolute;
+  background: #fef4e5;
+  border: solid 1px #f6c090;
+  color: #bc5212;
+  display: none;
+  padding: 0 12px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 3px;
+  z-index: 11;
+  .arrow{
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-color: #f6c090 transparent transparent;
+    border-style: solid dashed dashed;
+    border-width: 8px;
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    bottom: -16px;
+  }
+  .arrow-inner{
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-color: #fef4e5 transparent transparent;
+    border-style: solid dashed dashed;
+    border-width: 8px;
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    bottom: -15px;
+  }
+}
+.capslock-tip {
+  right: 2px;
+  top: -45px;
+}
+.item-email-wrap{
+  display: none;
+  height: 86px;
+  position: relative;
+  z-index: 11;
+  .orPhone{
+    position: absolute;
+    right: 0;
+    bottom: 6px;
+    font-size: 12px;
+    a{
+      color: #38f;
+    }
+  }
+}
+.item-phone-wrap{
+  .orEmail{
+    position: absolute;
+    right: 0;
+    bottom: 6px;
+    font-size: 12px;
+    a{
+      color: #38f;
+    }
+  }
+}
+.email-suggest{
+  position: absolute;
+  border: solid 1px #ccc;
+  z-index: 10;
+  background: #fff;
+  left: -1px;
+  top: 52px;
+  width: 100%;
+  li{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 130px;
+    color: #333;
+    padding-right: 12px;
+    text-align: right;
+    text-indent: -1000px;
+    .value{
+      overflow: hidden;
+    }
+  }
+}
+.suggest-container{
+  display: none;
+  li{
+    cursor: pointer;
+  }
+  .disabled{
+    cursor: default;
+  }
+}
+.item-phone-wrap{
+  height: 86px;
+  position: relative;
+  z-index: 2;
+}
+.btn-phonecode{
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 110px;
+  height: 46px;
+  border: none;
+  background: #f2f2f2;
+  color: #333;
+  padding: 0;
+  cursor: pointer;
+}
+.form-agreen{
+  color: #333;
+  font-size: 12px;
+  word-wrap: break-word;
+  white-space: nowrap;
+  input{
+    width: 18px;
+    height: 18px;
+    border: solid 1px #cfd1d3;
+    vertical-align: text-top;
+    padding: 0;
+    margin: 0;
+  }
+  a{
+    color: #38f;
+  }
+}
+.btn-register{
+  width: 100%;
+  height: 54px;
+  color: #fff;
+  background: #e22;
+  border: 0;
+  font-size: 16px;
+  font-family: "Microsoft YaHei","Hiragino Sans GB";
+  cursor: pointer;
+}
+//右边部分
+.reg-other{
+  float: left;
+  margin-left: 104px;
+  height: 605px;
+  padding-left: 90px;
+  border-left: solid 1px #e6e6e6;
+  .company-reg{
+    width: 160px;
+    height: 60px;
+    border-bottom: solid 1px #ddd;
+    margin-left: 30px;
+    a{
+      display: block;
+      width: 160px;
+      height: 30px;
+      i{
+        display: inline-block;
+        width: 30px;
+        height: 29px;
+        vertical-align: middle;
+        margin-right: 15px;
+        background: url(//misc.360buyimg.com/user/reg/1.0.0/css/i/icon.png) no-repeat;
+      }
+      .i-company{
+        background-position: 0 -50px;
+      }
+      span{
+        vertical-align: middle;
+      }
+    }
+  }
+  .inter-cust{
+    width: 160px;
+    margin-left: 30px;
+    margin-top: 30px;
+    a{
+      display: block;
+      width: 170px;
+      height: 40px;
+      i{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        vertical-align: text-bottom;
+        margin-right: 15px;
+        float: left;
+        margin-top: 7px;
+        background: url(//misc.360buyimg.com/user/reg/1.0.0/css/i/icon.png) no-repeat;
+      }
+      .i-global{
+        background-position: -50px -50px;
+      }
+      span{
+        display: inline-block;
+      }
+    }
+  }
+  .phone-fast-reg{
+    background: url(//misc.360buyimg.com/user/reg/1.0.0/widget/personal-reg-1130/i/phone.jpg) no-repeat;
+    width: 213px;
+    height: 270px;
+    margin-top: 50px;
+  }
+}
+.user-suggest{
+  position: absolute;
+  left: -1px;
+  display: block;
+  width: 398px;
+  border: solid 1px #f98;
+  z-index: 10;
+  top: 52px;
+  border-bottom: 5px solid RGBA(221,221,221,.15);
+  .disabled{
+    color: #ee2223;
+    .value{
+      overflow: hidden;
+    }
+    i{
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+  }
+  li{
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    padding-left: 130px;
+    background: #fdf2ef;
+    &:last-child{
+      border-bottom: 1px solid #f98;
+    }
+  }
+  .current{
+    background: #ffeae5;
+  }
+}
+.i-error1{
+  background: url(//misc.360buyimg.com/user/reg/1.0.0/css/i/icon.png) no-repeat;
+  background-position: -17px -117px;
+}
+.i-pwd-weak{
+  background: url(//misc.360buyimg.com/user/reg/1.0.0/css/i/icon.png) no-repeat;
+  background-position: -17px -134px;
+}
+.i-pwd-medium{
+  background: url(//misc.360buyimg.com/user/reg/1.0.0/css/i/icon.png) no-repeat;
+  background-position: -34px -117px;
+}
+.i-pwd-strong{
+  background: url(//misc.360buyimg.com/user/reg/1.0.0/css/i/icon.png) no-repeat;
+  background-position: -34px -134px;
+}

@@ -1,0 +1,138 @@
+.goods-intro{
+  width: 100%;
+  height: 232px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  .goods-intro-add{
+    display: block;
+    position: absolute;
+    bottom: -65px;
+    left: 0;
+    width: 200px;
+    height: 65px;
+    background: #fe575f;
+    color: #fff;
+    text-align: center;
+    -webkit-transition: bottom .25s ease;
+    -moz-transition: bottom .25s ease;
+    transition: bottom .25s ease;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .goods-intro-add-text{
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.goods-item{
+  float: left;
+  width: 200px;
+  position: relative;
+  &:hover{
+    .goods-intro-avatar{
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+    .goods-intro-add{
+      bottom: 0;
+    }
+  }
+}
+.goods-split{
+  position: absolute;
+  width: 1px;
+  height: 128px;
+  background-color: #e1e1e1;
+  right: -1px;
+  top: 33px;
+  z-index: 10;
+}
+.goods-intro-title{
+  font-size: 12px;
+  text-align: left;
+  color: #999;
+  padding: 13px 0 7px;
+  display: block;
+  max-width: 100%;
+  _width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.goods-intro-pic {
+  width: 176px;
+  height: 178px;
+  line-height: 176px;
+  display: block;
+  background: url(//misc.360buyimg.com/lib/skin/e/i/error-jd.gif) no-repeat 50% 50%;
+}
+.goods-intro-avatar{
+  display: inline-block;
+  -webkit-transition: -webkit-transform .4s ease;
+  transition: -webkit-transform .4s ease;
+  -moz-transition: transform .4s ease,-moz-transform .4s ease;
+  transition: transform .4s ease;
+  transition: transform .4s ease,-webkit-transform .4s ease,-moz-transform .4s ease;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  width: 160px;
+  height: 160px;
+}
+.goods-intro-wrapper{
+  padding: 12px;
+  padding-bottom: 16px;
+}
+.good-intro-sale-arrow{
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: 50%;
+  margin-left: -4px;
+  top: -4px;
+  border-left: 4px dashed transparent;
+  border-right: 4px dashed transparent;
+  border-bottom: 4px solid #f0efef;
+  overflow: hidden;
+}
+.goods-intro-price{
+  font-size: 18px;
+  text-align: left;
+  color: #fc1934;
+  line-height: 18px;
+}
+.goods-intro-add{
+  display: block;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 200px;
+  height: 60px;
+  background: #fe575f;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: bottom .25s ease;
+  -moz-transition: bottom .25s ease;
+  transition: bottom .25s ease;
+  font-size: 14px;
+  cursor: pointer;
+}
+.goods-intro-add-icon{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px 0 0;
+  background-repeat: no-repeat;
+  background-image: url(//static.360buyimg.com/mtd/pc/supermarket/2.0.0/home/images/icons/normal-s91a16d4292.png);
+  background-position: 0 -951px;
+  height: 22px;
+  width: 22px;
+}
+.goods-intro-add-text{
+  display: inline-block;
+  vertical-align: middle;
+}

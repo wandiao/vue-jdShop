@@ -1,0 +1,20 @@
+{
+  "panics":[
+    {
+      "url":"//sale.jd.com/act/Tm6IhOtnKEjg.html",
+      "title":"2.9",
+      "img":"//img11.360buyimg.com/cms/jfs/t3286/23/6147193666/35075/6fe74a44/58899050N1beb2540.jpg",
+      "showTime":12
+    }
+  ],
+  "purchase":{
+    "url":"https://item.jd.com/3830809.html",
+    "title":"2.10",
+    "img":"//img14.360buyimg.com/cms/jfs/t3160/312/6072064500/18841/9dafd458/589af29bNdc94b0ad.jpg"
+  },
+  "first":{
+    "url":"https://item.jd.com/3672543.html",
+    "title":"2.10",
+    "img":"//img10.360buyimg.com/cms/jfs/t3223/91/5923893317/22895/9be3e9e8/5895a39cNc91c0de1.jpg"
+  }
+}

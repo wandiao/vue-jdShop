@@ -1,0 +1,169 @@
+@import './common-1';
+@import './common-2';
+@import './common-3';
+@color:#C81623;
+@light-color:#fc1934;
+body, div, span, header, footer, nav, section, aside, em, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, i, textarea, button, input, select  {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Microsoft YaHei';
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+    &:focus {
+        outline: none;
+    }
+}
+
+button, input, select, textarea {
+    outline: 0;
+}
+
+a{
+  color:#666;
+  &:hover{
+    color:@color;
+  }
+  &:hover,&:link,&:visited{
+    outline: 0;
+    text-decoration: none;
+  }
+}
+img{
+  border:0;
+  vertical-align: middle;
+}
+img.err-poster, img.err-product {
+    background: url(//misc.360buyimg.com/lib/skin/e/i/error-jd.gif) no-repeat 50% 50%;
+}
+
+html,body{
+    width: 100%;
+    min-height: 100%;
+    color:#666;
+}
+//通用类名
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width:1200px) {
+    width: 1200px;
+  }
+  @media screen and (max-width:1199px) {
+    width: 100%;
+  }
+}
+.w{
+  width: 990px;
+  margin: 0 auto;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+    width: 0;
+}
+.hr{
+  border-bottom: 1px solid #e6e6e6;
+  height: 0;
+  margin-bottom: 10px;
+}
+
+.clearfix{
+    zoom:1;
+}
+
+.margin{
+    margin: 0 auto;
+}
+
+.left,.fl{
+    float: left;
+}
+
+.tc,.ac{
+  text-align: center;
+}
+.tr,.ar{
+  text-align: right;
+}
+
+.right,.fr{
+    float:right;
+}
+
+.hide{
+    display: none !important;
+}
+
+.show{
+    display: block !important;
+}
+.img-responsive{
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+.img-circle{
+  border-radius: 50%;
+}
+.dropdown{
+  position: relative;
+  head{
+    position: relative;
+  }
+}
+.li{
+  margin-bottom: 3px;
+  line-height: 32px;
+  display: block;
+  .item{
+    float: left;
+    color: #666;
+    background-color: #FFF;
+    margin-right: 7px;
+    margin-bottom: 4px;
+    a{
+      border: 1px solid #ccc;
+      padding: 0 13px;
+      display: block;
+      white-space: nowrap;
+    }
+    &:hover,&.selected{
+      a{
+        border: 1px solid #e3393c;
+        color: #666;
+      }
+    }
+  }
+}
+.lh{
+  overflow: hidden;
+  zoom:1;
+}
+.ellipsis{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.crumb,.crumb-wrap{
+  position: relative;
+  z-index: 5;
+}
+.crumb{
+  padding: 13px 0 9px;
+  .item{
+    float: left;
+    &:not(:last-child)::after{
+      content:">";
+      font-family: simsun;
+      padding: 0 10px;
+    }
+  }
+}
+.m, .mb, .mc, .mt, .p-detail, .p-img, .p-market, .p-name, .p-price, .sm, .smb, .smc, .smt {
+    overflow: hidden;
+}

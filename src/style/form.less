@@ -1,0 +1,95 @@
+
+.btn-default{
+  border: 1px solid #DDD;
+  padding: 4px 13px 5px;
+  color: #666;
+  background-color: #f7f7f7;
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(top,#f7f7f7,#f2f2f2);
+  background-image: -webkit-linear-gradient(top,#f7f7f7,#f2f2f2);
+  background-image: -o-linear-gradient(top,#f7f7f7,#f2f2f2);
+  background-image: linear-gradient(top,#f7f7f7,#f2f2f2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#f2f2f2', GradientType=0);
+}
+.btn{
+  display: inline-block;
+  line-height: 14px;
+  height: 25px;
+  border-radius: 2px;
+  background: #F7F7F7;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  &.disabled{
+    padding: 4px 13px 5px;
+    border: 1px solid #DDD;
+    background: #FFF;
+    cursor: default;
+    color: #CCC;
+    opacity: .2;
+    filter: alpha(Opacity=20);
+    filter: alpha(Opacity=20);
+  }
+}
+.btn-def{
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.btn-primary{
+  border: 0;
+  padding: 5px 15px 6px;
+  color: #FFF;
+  background-color: #E74649;
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(top,#E74649,#DF3033);
+  background-image: -webkit-linear-gradient(top,#E74649,#DF3033);
+  background-image: -o-linear-gradient(top,#E74649,#DF3033);
+  background-image: linear-gradient(top,#E74649,#DF3033);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E74649', endColorstr='#DF3033', GradientType=0);
+}
+.btn-multiple{
+    display: inline-block;
+    height: 22px;
+    line-height: 20px;
+    border: 1px solid #DDD;
+    padding: 0 3px 0 18px;
+    position: relative;
+    background: #fff;
+    color: #333;
+    &:hover{
+      text-decoration: none;
+      color: #e4393c;
+      border-color: #e4393c;
+      i{
+        background-position: 0 -84px;
+      }
+    }
+    i{
+      position: absolute;
+      display: block;
+      font-style: normal;
+      left: 3px;
+      top: 0;
+      width: 13px;
+      height: 20px;
+      background: url(//misc.360buyimg.com/product/search/1.0.2/css/i/search.ele.png) no-repeat 0 -63px;
+      -webkit-transition: background-position .15s ease-in-out;
+      -moz-transition: background-position .15s ease-in-out;
+      transition: background-position .15s ease-in-out;
+    }
+}
+.input-txt{
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid #CCC;
+  padding: 3px;
+  width: 151px;
+}
+.input-XL{
+  width: 225px;
+  height: 36px;
+  line-height: 28px;
+  font-size: 14px;
+}
