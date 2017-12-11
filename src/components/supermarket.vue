@@ -443,10 +443,10 @@ margin-top: 26px;
                   <div class="p-img left">
                     <router-link :to="'/goods/'+prod.skuid">
                       <img :src="prod.pic_address" :alt="prod.sku_name" width="50" height="50">
-                    </a>
+                    </router-link>
                   </div>
                   <div class="p-name left">
-                    <router-link :to="'/goods/'+prod.skuid" :title="prod.sku_name" target="_blank">{{prod.sku_name}}</a>
+                    <router-link :to="'/goods/'+prod.skuid" :title="prod.sku_name" target="_blank">{{prod.sku_name}}</router-link>
                   </div>
                   <div class="p-detail right">
                     <span class="p-price"><strong>￥{{prod.price | double}}</strong>×{{prod.num}}</span>
@@ -458,7 +458,7 @@ margin-top: 26px;
             </div>
             <div class="smb ar">
               <div class="p-total">共<b>{{cartProds.length}}</b>件商品　共计<strong>￥ {{cartTotalPrice | double}}</strong></div>
-              <router-link to="/cart/action" title="去购物车" id="btn-payforgoods">去购物车</a>
+              <router-link to="/cart/action" title="去购物车" id="btn-payforgoods">去购物车</router-link>
             </div>
           </div>
         </div>

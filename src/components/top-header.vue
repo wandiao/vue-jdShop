@@ -265,7 +265,7 @@
           <div class="dt cw-icon">
             <i class="icon-plus-nickname"></i>
             <i class="ci-right"><s>◇</s></i>
-            <router-link class="nickname" target="_blank" to="/user">{{username}}</a>
+            <router-link class="nickname" target="_blank" to="/user">{{username}}</router-link>
           </div>
           <div class="dd dropdown-layer">
             <div class="dd-spacer"></div>
@@ -302,7 +302,7 @@
         </li>
         <li class="spacer"></li>
         <li>
-          <router-link to="/user/order">我的订单</a>
+          <router-link to="/user/order">我的订单</router-link>
         </li>
         <li class="spacer"></li>
         <li>

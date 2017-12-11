@@ -9,7 +9,7 @@
        <a href="" class="logo"></a>
        <div class="logo-title">欢迎注册</div>
        <div class="have-account">
-         已有账号 ? <router-link to="/login">请登录</a>
+         已有账号 ? <router-link to="/login">请登录</router-link>
        </div>
       </div>
     </div>
@@ -34,6 +34,7 @@
                 </li>
                 <li class="current" v-for="suser in sugUsernames">
                   <div class="value">{{suser}}</div>
+                </li>
               </div>
             </div>
             <div class="input-tip">
@@ -154,6 +155,7 @@
               <div class="input-tip">
                 <span  :class="{'error':agreeError.error,'hide':agreeError.state == 0 || authcodeError.state == 4}" >
                   <i :class="{'i-def':agreeError.state == 1,'i-error':agreeError.state == 2}"></i>{{agreeError.msg}}
+                </span>
               </div>
               <div>
                 <button @click="submit" type="button" class="btn-register">立即注册</button>

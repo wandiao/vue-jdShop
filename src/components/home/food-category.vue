@@ -196,7 +196,7 @@
           <li class="food-category-show-item" v-for="showItem in goodsListItem.show.list">
             <router-link :to="'/search?keyword='+showItem" class="food-category-show-text">
               {{showItem}}<i class="food-category-show-add">+</i>
-            </a>
+            </router-link>
           </li>
         </ul>
         <a class="food-category-show-link"></a>
